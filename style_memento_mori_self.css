@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-image: url("../img/memento_mori_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: 100;
+    background-position: center;
+    height: 100vh;
+    overflow-y: hidden;
+    background: black;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'ZCOOL QingKe HuangYou', cursive !important;
+    flex-direction: column;
+}
+
+h1 {
+    color: red;
+    font-weight: 100;
+    font-size: 7em;
+    margin: 40px 0px 30px;
+    font-family: ZCOOL QingKe HuangYou;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+p {
+    margin-top: 300px;
+    font-family: 'Shadows Into Light';
+    font-size: 1em;
+    padding: 20px;
+    border-radius: 50px;
+    background: #493F3C;
+    display: none;
+}
+
+h2 {
+    margin-top: 30px;
+    font-family: 'Shadows Into Light';
+    font-size: 1.2em;
+    padding: 30px;
+    border-radius: 50px;
+    background: #493F3C;
+    display: none;
+}
+
+#clockdiv {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    /* color: #fff; */
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 25px;
+    margin-bottom: 7em;
+}
+
+#clockdiv>div {
+    padding: 10px;
+    border-radius: 10px;
+    /* background: #785D4D; */
+    display: inline-block;
+}
+
+#clockdiv div>span {
+    padding: 15px;
+    border-radius: 3px;
+    /* background: #493F3C; */
+    display: inline-block;
+    color: red;
+    font-size: 5em;
+}
+
+.smalltext {
+    padding-top: 5px;
+    font-size: 2em;
+    color: red;
+}
+
+/* nem mÅ±kÃ¶dik, mert a viewport meta ki van kapcsolva */
+@media (max-width: 706px) {
+    /* #clockdiv {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    } */
+
+    #clockdiv>div {
+        padding: 5px;
+    }
+
+    body {
+        overflow-y: auto;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    p {
+        margin-top: 20px;
+        font-size: 0.8em;
+        background: rgba(73, 63, 60, 0.5);
+    }
+
+    h2 {
+        font-size: 1.1em;
+        background: rgba(73, 63, 60, );
+    }
+}
