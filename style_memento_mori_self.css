@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
 
 * {
     padding: 0px;
@@ -20,17 +20,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'ZCOOL QingKe HuangYou', cursive !important;
+    font-family: 'Overpass Mono';
     flex-direction: column;
 }
 
 h1 {
     color: red;
     font-weight: 100;
-    font-size: 7em;
-    margin: 40px 0px 30px;
-    font-family: ZCOOL QingKe HuangYou;
-    margin-top: 0;
+    font-size: 6em;
+    font-family: 'Overpass Mono';
     margin-bottom: 1.5em;
 }
 
@@ -55,12 +53,12 @@ h2 {
 }
 
 #clockdiv {
-    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-family: 'Overpass Mono', 'ZCOOL QingKe HuangYou', cursive;
     /* color: #fff; */
     display: inline-block;
     font-weight: 100;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.5em;
     padding-bottom: 25px;
     margin-bottom: 7em;
 }
@@ -87,35 +85,49 @@ h2 {
     color: red;
 }
 
-/* nem mÅ±kÃ¶dik, mert a viewport meta ki van kapcsolva */
-@media (max-width: 706px) {
-    /* #clockdiv {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-    } */
+@media(max-width: 94em) {
 
-    #clockdiv>div {
-        padding: 5px;
-    }
+}
 
+@media(max-width: 74em) {
     body {
-        overflow-y: auto;
+        font-size: .6em;
     }
 
     h1 {
-        font-size: 4em;
+        margin-top: -2em;
+        margin-bottom: 3.5em;
     }
 
-    p {
-        margin-top: 20px;
-        font-size: 0.8em;
-        background: rgba(73, 63, 60, 0.5);
+
+
+}
+
+@media(max-width: 47em) {
+
+    body {
+        font-size: .4em;
     }
 
-    h2 {
-        font-size: 1.1em;
-        background: rgba(73, 63, 60, );
+
+    #clockdiv {
+        display: flex;
+        flex-direction: column;
     }
+
+    h1 {
+        margin-bottom: 0.5em;
+        margin-top: 1em;
+    }
+
+    #clockdiv {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    #clockdiv div>span {
+        padding-bottom: 0.5em;
+    }
+
+
 }
