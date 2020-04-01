@@ -128,6 +128,36 @@ h2 {
     #clockdiv div>span {
         padding-bottom: 0.5em;
     }
+}
+
+@media(max-width: 25em) {
+
+    body {
+        font-size: .35em;
+    }
 
 
+    #clockdiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #clockdiv span {
+        margin-bottom: -1em;
+    }
+
+
+    h1 {
+        margin-bottom: 0.5em;
+        margin-top: 1em;
+    }
+
+    #clockdiv {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    #clockdiv div>span {
+        padding-bottom: 0.5em;
+    }
 }
